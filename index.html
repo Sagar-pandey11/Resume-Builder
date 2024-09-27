@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Maker</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            /* display: flex; */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Form Container */
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            padding-right: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        /* Form Title */
+        h1 {
+            text-align: center;
+            color: #333333;
+        }
+
+        /* Input Labels */
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333333;
+            font-weight: bold;
+        }
+
+        /* Input Fields */
+        input[type="text"],
+        input[type="email"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: #28a745;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+        /* Hover and Focus Effects */
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="number"]:focus,
+        input[type="text"]:hover,
+        input[type="email"]:hover,
+        input[type="number"]:hover {
+            border-color: #28a745;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Resume Builder</h1>
+    <form method="POST" action="submit">
+        <label for="username">Username : </label>
+        <input type="text" id="uname" placeholder="Enter Your Name..." name="uname"><br>
+
+        <label for="mail">E-mail : </label>
+        <input type="email" id="email" placeholder="Enter Your Mail..." name = "email"><br>
+
+        <label for="phoneNumber">Phone no. : </label>
+        <input type="number" id="phone" placeholder="Enter Your Phone Number..." name = "phone"><br>
+
+        <label for="summ">Summary : </label>
+        <textarea name="summary" id="area" placeholder="Write Here..." rows="5" cols="54" name = "area"></textarea>
+
+        <label for="skill">Skills : </label>
+        <input type="text" id="skills" placeholder="Skills..." name="skills"><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
